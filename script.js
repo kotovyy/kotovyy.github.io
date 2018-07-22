@@ -27,3 +27,44 @@ function showSearchField(event) {
 		search.classList.remove('header-search-show');
 	}
 }
+
+//choose section in footer menu
+
+const selectSection = document.querySelector('.js-footer-menu-mobile');
+const sectionList = document.querySelector('.js-footer-menu-list-mobile');
+let sectionItems = document.querySelectorAll('.js-select-item');
+const selectedSectionName = document.querySelector('.js-selected-name');
+const sectionMenu = document.querySelectorAll('.footer-menu-list');
+
+selectSection.addEventListener('click', toggleSection.bind(this));
+
+function toggleSection(event) {
+	sectionList.classList.toggle("footer-menu-list-mobile-hidden");
+}
+
+sectionItems = Array.prototype.slice.call(sectionItems, 0);
+
+sectionItems.forEach(function(item) {
+	item.addEventListener('click', selectSectionHandler.bind(this));
+});
+
+function selectSectionHandler(event) {
+	changeSection(event.target.dataset.section, event.target.innerHTML);
+}
+
+function changeSection(sectionValue, sectionName)
+{
+	sectionName = sectionName || '';
+	if (sectionName !== '') {
+		selectedSectionName.innerHTML = sectionName;
+	}
+
+	for (let i = 0; i < sectionMenu.length; i++) {
+		if (sectionMenu[i].dataset.section === sectionValue) {
+			sectionMenu[i].style.display = "block";
+		}
+		else {
+			sectionMenu[i].style.display = "none";
+		}
+	}
+}
