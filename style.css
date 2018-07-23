@@ -175,7 +175,7 @@ ul {
 	width: 1280px;
 	z-index: 999;
 	align-items: flex-start;
-	padding: 36px 50px 0 0;
+	padding: 36px 0 0 0;
 	flex-wrap: wrap;
 	display: none;
 	box-sizing: border-box;
@@ -209,7 +209,7 @@ ul {
 .menu-bottom-submenu-img {
 	width: 268px;
 	height: 196px;
-	padding-left: 35px;
+	padding-left: 27px;
 	margin-right: 45px;
 	flex-shrink: 0;
 }
