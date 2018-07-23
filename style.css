@@ -144,6 +144,10 @@ ul {
 	padding: 0 14px;
 }
 
+.menu-bottom-item {
+	position: relative;
+}
+
 .menu-bottom-link {
 	color: #f9fcfe;
 	font: 18px/28px "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
@@ -161,6 +165,97 @@ ul {
 .menu-bottom-link:hover {
 	border-color: #c1e8ff;
 	color: #bcddf0;
+}
+
+.menu-bottom-submenu {
+	position: absolute;
+	top: 102px;
+	left: -320px;
+	background: #fff;
+	width: 1280px;
+	z-index: 999;
+	align-items: flex-start;
+	padding: 36px 50px 0 0;
+	flex-wrap: wrap;
+	display: none;
+	box-sizing: border-box;
+}
+
+.menu-bottom-item:hover .menu-bottom-submenu {
+	display: flex;
+}
+
+.menu-bottom-submenu-study {
+	left: -469px;
+}
+
+.menu-bottom-submenu-link {
+	font: 12px/20px "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
+	color: #c9c9c9;
+	transition: all .2s linear;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.menu-bottom-submenu-item:last-child .menu-bottom-submenu-link {
+	margin-bottom: 0;
+}
+
+.menu-bottom-submenu-link:hover {
+	color: #2298dd;
+}
+
+.menu-bottom-submenu-img {
+	width: 268px;
+	height: 196px;
+	padding-left: 35px;
+	margin-right: 45px;
+	flex-shrink: 0;
+}
+
+.menu-bottom-submenu-img img {
+	max-width: 100%;
+	height: auto;
+}
+
+.menu-bottom-submenu-lists {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.menu-bottom-submenu-list {
+	width: 250px;
+}
+
+.menu-bottom-submenu-list + .menu-bottom-submenu-list {
+	margin-left: 40px;	
+}
+
+.menu-bottom-section {
+	text-transform: uppercase;
+	background: #e8e8e8;
+	color: #000;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 14px 32px 11px 35px;
+	width: 100%;
+	font-family: "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
+	margin-top: 60px;
+}
+
+.menu-bottom-section-text {
+	padding-right: 26px;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+.menu-bottom-section-text:after {
+	content: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%227%22%20height%3D%2212%22%20viewBox%3D%220%200%207%2012%22%20fill%3D%22000%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%3Cpath%20d%3D%22M1.16305%200L0%201.2981L3.82144%205.56329L0%209.82848L1.16305%2011.1266L6.14754%205.56329L1.16305%200Z%22%20transform%3D%22translate%280.297363%200.201477%29%22%20fill%3D%22000%22/%3E%0A%3C/svg%3E%0A);
+	position: absolute;
+	right: 0;
+	top: 1px;
 }
 
 .header-mail {
@@ -780,6 +875,10 @@ ul {
 		right: 0;
 		top: 0;
 		width: 100%;
+	}
+
+	.menu-bottom-item:hover .menu-bottom-submenu {
+		display: none;
 	}
 
 	.preview {
