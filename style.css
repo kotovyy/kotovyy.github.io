@@ -124,6 +124,7 @@ ul {
 .menu {
 	width: 100%;
 	margin-left: 350px;
+	overflow: hidden;
 }
 
 .menu-top-link {
