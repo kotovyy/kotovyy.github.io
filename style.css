@@ -828,7 +828,7 @@ ul {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	padding-top: 34px;
+	padding-top: 23px;
 	font-family: "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
 }
 
@@ -836,7 +836,7 @@ ul {
 	color: #040404;
 	font-size: 24px;
 	line-height: 31px;
-	padding: 0 32px 35px 50px;
+	padding: 0 32px 24px 50px;
 }
 
 .preview-more {
