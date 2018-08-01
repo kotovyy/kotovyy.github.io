@@ -176,28 +176,25 @@ ul {
 
 .menu-bottom-submenu {
 	position: absolute;
-	top: 102px;
-	left: -320px;
+	top: 154px;
+	left: 0;
 	background: #fff;
-	width: 1280px;
+	width: 100%;
 	z-index: 999;
 	align-items: flex-start;
 	padding: 36px 0 0 0;
 	flex-wrap: wrap;
 	display: none;
 	box-sizing: border-box;
+	height: 514px;
 }
 
-.menu-bottom-item:hover .menu-bottom-submenu {
+.menu-bottom-inner:hover .menu-bottom-submenu {
 	display: flex;
 }
 
-.menu-bottom-submenu-study {
-	left: -469px;
-}
-
 .menu-bottom-submenu-link {
-	font: 12px/20px "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
+	font: 16px/26px "OpenSans-Regular", Arial, Helvetica, sans-serif;
 	color: #c9c9c9;
 	transition: all .2s linear;
 	text-decoration: none;
@@ -217,7 +214,7 @@ ul {
 	width: 268px;
 	height: 196px;
 	padding-left: 27px;
-	margin-right: 45px;
+	margin-right: 79px;
 	flex-shrink: 0;
 }
 
@@ -233,7 +230,7 @@ ul {
 }
 
 .menu-bottom-submenu-list {
-	width: 250px;
+	width: 310px;
 }
 
 .menu-bottom-submenu-list + .menu-bottom-submenu-list {
@@ -249,7 +246,7 @@ ul {
 	padding: 14px 32px 11px 35px;
 	width: 100%;
 	font-family: "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
-	margin-top: 60px;
+	margin-top: auto;
 }
 
 .menu-bottom-section-text {
@@ -675,6 +672,7 @@ ul {
 
 .footer-menu-list {
 	width: 23%;
+	display: block;
 }
 
 .footer-menu-link {
