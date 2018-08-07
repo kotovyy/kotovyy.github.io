@@ -58,6 +58,7 @@ ul {
 .header_inner {
 	display: flex;
 	align-items: center;
+	box-shadow: 0 4px 3px rgba(0,0,0,0.2);
 }
 
 .menu-top-inner {
@@ -194,11 +195,11 @@ ul {
 }
 
 .menu-bottom-submenu-link {
-	font: 16px/26px "OpenSans-Regular", Arial, Helvetica, sans-serif;
+	font: 16px/24px "OpenSans-Regular", Arial, Helvetica, sans-serif;
 	color: #c9c9c9;
 	transition: all .2s linear;
 	text-decoration: none;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	display: block;
 }
 
@@ -405,10 +406,6 @@ ul {
 	color: #bdefff;
 }
 
-.news {
-	margin-bottom: 68px;
-}
-
 .news-title {
 	color: #040404;
 	font: 32px/36px "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
@@ -459,6 +456,11 @@ ul {
 	margin-bottom: 4px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	transition: all .2s linear;
+}
+
+.news-item-section:hover {
+	color: #009bec;
 }
 
 .news-item-title {
@@ -482,7 +484,8 @@ ul {
 }
 
 .news-button-wrap {
-	text-align: center; 
+	text-align: center;
+	margin-bottom: 68px;
 }
 
 .news-button {
@@ -497,6 +500,7 @@ ul {
 	font: 20px/28px "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
 	cursor: pointer;
 	transition: background .2s linear;
+	box-shadow: 0 0 12px rgba(0,0,0,0.25);
 }
 
 .news-button:hover {
@@ -534,6 +538,12 @@ ul {
 	line-height: 20px;
 	margin-bottom: 8px;
 	display: block;
+	transition: color .2s linear;
+}
+
+
+.events-link:hover {
+	color: #007cc4;
 }
 
 .events-date {
@@ -676,10 +686,12 @@ ul {
 }
 
 .footer-menu-link {
-	font: 14px/20px "OpenSans-Regular", Arial, Helvetica, sans-serif;
+	font-family: "OpenSans-Regular", Arial, Helvetica, sans-serif;
+	font-size: 14px;
 	color: #a9a9a9;
 	text-decoration: none;
 	transition: color .2s linear;
+	display: inline-block;
 }
 
 .footer-menu-link:hover {
@@ -687,7 +699,8 @@ ul {
 }
 
 .footer-menu-item {
-	margin-bottom: 5px;
+	margin-bottom: 11px;
+	line-height: 18px;
 }
 
 .footer-menu-item-title {
@@ -713,11 +726,12 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 23px;
 }
 
 .partners-item {
 	background: #fff;
-	width: 23.5%;
+	width: 23%;
 	height: 86px;
 	box-shadow: 3px 2px 31px #ebebeb;
 	display: flex;
@@ -758,38 +772,37 @@ ul {
 	opacity: 1;
 }
 
-.copyright {
-	opacity: .6;
-}
-
 .copyright-document {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 62px;
+	opacity: .6;
 }
 
 .copyright-document-text {
 	color: #747474;
 	font-size: 10px;
 	line-height: 16px;
-	width: 280px;
+	width: 323px;
 }
 
 .copyright-document-text:first-child {
-	margin-right: 40px;
+	margin-right: 33px;
 }
 
 .copyright-subject {
-	padding-top: 53px;
-	border-top: 1px solid #d5d5d5;
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
 	width: 603px;
 }
 
-.copyright-subject:before {
-	content: "";
+.copyright-subject-link {
+	position: relative;
+	padding-bottom: 53px;
+}
+
+.copyright-subject-logo {
 	position: absolute;
 	top: -7px;
 	left: 50%;
@@ -800,14 +813,36 @@ ul {
 	transform: translate3d(-50%,-50%,0);
 	width: 56px;
 	height: 94px;
-	background: #f8fcff url(kotovyy.github.io/img/footer-logo.svg) no-repeat center;
-	padding: 0 17px;
+	font-size: 0;
+	background: #f8fcff url(img/footer-logo.svg) no-repeat center;
+	box-sizing: border-box;
+	opacity: .6;
+	transition: all .2s linear;
+	z-index: 999;
+}
+
+.copyright-subject-line {
+	width: 258px;
+	height: 1px;
+	background: rgba(213, 213, 213, .6);
+	display: block;
+	position: absolute;
+	right: 0;
+}
+
+.copyright-subject-line:last-child {
+	left: 0;
+}
+
+.copyright-subject-logo:hover {
+	opacity: .85;
 }
 
 .copyright-subject-text {
 	color: #747474;
 	font-size: 10px;
 	line-height: 16px;
+	opacity: .6;
 }
 
 .preview-link {
@@ -1040,6 +1075,10 @@ ul {
 		box-shadow: 0 9px 0 0 #fff, 0 18px 0 0 #fff;
 	}
 
+	.menu-bottom-inner:hover .menu-bottom-submenu {
+		display: none;
+	}
+
 	.header-search {
 		position: fixed;
 	}
@@ -1069,9 +1108,13 @@ ul {
 		line-height: 28px;
 	}
 
+	.features {
+		padding: 10px 0 20px;
+	}
+
 	.features-list {
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-around;
 	}
 
 	.features-item {
@@ -1114,10 +1157,6 @@ ul {
 
 	.news-button {
 		width: 371px;
-	}
-
-	.news {
-		margin-bottom: 36px;
 	}
 
 	.events {
@@ -1355,6 +1394,7 @@ ul {
 
 	.features {
 		margin-bottom: 20px;
+		padding: 9px 0 5px;
 	}
 
 	.news-title {
@@ -1405,15 +1445,15 @@ ul {
 		line-height: 21px;
 	}
 
+	.news-button-wrap {
+		margin-bottom: 50px;
+	}
+
 	.news-button {
 		width: 260px;
 		font-size: 16px;
 		line-height: 24px;
 		padding: 12px 0;
-	}
-
-	.news {
-		margin-bottom: 45px;
 	}
 
 	.events {
@@ -1517,6 +1557,18 @@ ul {
 		line-height: 19px;
 	}
 
+	.copyright-subject-text:last-child {
+		margin-top: 10px;
+	}
+
+	.copyright-subject-line {
+		width: 115px;
+	}
+
+	.copyright-subject-logo {
+		background-color: #fff;
+	}
+
 	.footer-menu-list {
 		display: none;
 		width: 100%;
@@ -1563,7 +1615,7 @@ ul {
 	}
 
 	.footer-menu-mobile-selected-name:after {
-		content: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2211%22%20height%3D%228%22%20viewBox%3D%220%200%2011%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%3Cpath%20opacity%3D%220.495926%22%20d%3D%22M1.20393%200L0%201.16667L3.95577%205L0%208.83333L1.20393%2010L6.36364%205L1.20393%200Z%22%20transform%3D%22translate%2810.2588%200.891846%29%20rotate%2890%29%22%20fill%3D%22%23979797%22%20fill-opacity%3D%220.5%22/%3E%0A%3C/svg%3E%0A);
+		content: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2211%22%20height%3D%228%22%20viewBox%3D%220%200%2011%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%3Cpath%20opacity%3D%221%22%20d%3D%22M1.20393%200L0%201.16667L3.95577%205L0%208.83333L1.20393%2010L6.36364%205L1.20393%200Z%22%20transform%3D%22translate%2810.2588%200.891846%29%20rotate%2890%29%22%20fill%3D%22%23929292%22%20fill-opacity%3D%221%22/%3E%0A%3C/svg%3E%0A);
 		position: absolute;
 		top: 0; 
 		right: 0;
@@ -1592,7 +1644,7 @@ ul {
 	.footer-menu-link {
 		font-size: 14px;
 		line-height: 20px;
-		color: #040404;
+		color: #6d6d6d;
 		padding: 12px 0;
 		display: block;
 	}
@@ -1609,7 +1661,7 @@ ul {
 	}
 
 	.footer-down {
-		padding: 0 9px 15px 11px;
+		padding: 0 9px 25px 11px;
 	}
 
 }
