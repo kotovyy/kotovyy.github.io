@@ -68,3 +68,18 @@ function changeSection(sectionValue, sectionName)
 		}
 	}
 }
+
+// slider for news
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+ 
+      items : 1,
+      nav: true,
+      dots: true,
+      dotsEach: true,
+      navText: false,
+      pagination: false
+  });
+
+});
