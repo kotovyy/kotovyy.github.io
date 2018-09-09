@@ -1122,6 +1122,14 @@ ul {
 	height: auto;
 }
 
+button:active, button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
 @media (max-width: 1400px) {
 
 	.menu-top-link {
