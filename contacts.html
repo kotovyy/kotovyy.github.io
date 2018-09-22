@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
 		<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-		<title>Новости</title>
+		<title>Контакты</title>
 	</head>
 	<body>
 		<header class="header">
@@ -176,13 +176,15 @@
 										<span class="contacts-detail-text-sm">Обед:</span><br>
 										с 13.00 до 13.30</span>
 								</div>
-								<div class="contacts-detail-item">
-									<span class="contacts-detail-title">Телефон</span>
-									<span class="contacts-detail-text">+7 (4012) 92-50-03</span>
-								</div>
-								<div class="contacts-detail-item">
-									<span class="contacts-detail-title">Телефон/Факс</span>
-									<span class="contacts-detail-text">+7 (4012) 91-66-90</span>
+								<div class="contacts-detail-item-phones">
+									<div class="contacts-detail-item">
+										<span class="contacts-detail-title">Телефон</span>
+										<span class="contacts-detail-text">+7 (4012) 92-50-03</span>
+									</div>
+									<div class="contacts-detail-item">
+										<span class="contacts-detail-title">Телефон/Факс</span>
+										<span class="contacts-detail-text">+7 (4012) 91-66-90</span>
+									</div>
 								</div>
 							</div>
 							<div class="contacts-detail-column">
@@ -201,7 +203,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="contacts-detail-map"></div>
+					<div class="contacts-detail-map">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A368da40ee09a7a79ce541654f73f697bf242aa8df512392c56e5784dbe82797e&amp;source=constructor" class="contacts-detail-map-iframe" frameborder="0"></iframe>
+					</div>
 				</div>
 				<div class="contacts-section-item contacts-section-item-form">
 					<div class="contacts-section-header">
@@ -211,23 +215,21 @@
 					<div class="contacts-section-content">
 						<form class="contacts-form">
 							<div class="contacts-form-block">
-								<input type="text" class="contacts-form-input">
+								<input type="text" class="contacts-form-input" placeholder="Имя и Фамилия">
+								<input type="text" class="contacts-form-input" placeholder="E-mail">
 							</div>
 							<div class="contacts-form-block">
-								<input type="text" class="contacts-form-input">
-							</div>
-							<div class="contacts-form-block">
-								<textarea class="contacts-form-textarea"></textarea>
+								<textarea class="contacts-form-textarea" placeholder="Сообщение"></textarea>
 							</div>
 							<div class="contacts-form-captcha">
-								<div class="contacts-form-captcha-value"></div>
-								<div class="contacts-form-captcha-text">
-									<input type="text">
+								<div class="contacts-form-captcha-value">
+									<input class="contacts-form-input contacts-form-input-captcha" type="text">
 								</div>
+								<input class="contacts-form-input contacts-form-input-captcha" placeholder="Код с картинки" type="text">
 							</div>
-							<button type="submit">Отправить</button>
+							<button type="submit" class="news-button news-button-contacts">Отправить</button>
 							<div class="contacts-form-terms">Нажимая кнопку «Отправить» вы принимаете условия 
-							<a href="" class="contacts-form-terms-link">Соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных</div>
+							<a href="" class="contacts-link">Соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных</div>
 						</form>
 					</div>
 				</div>
@@ -241,237 +243,237 @@
 							<div class="contacts-staff-item">
 								<span class="contacts-staff-title">Приемная</span>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Карпович Сергей Михайлович</span>
-									<span class="contacts-staff-desc">начальник академии</span>
+									<div class="contacts-staff-subject">Карпович Сергей Михайлович</div>
+									<div class="contacts-staff-desc">начальник академии</div>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Токарева Елена Александровна</span>
-									<span class="contacts-staff-desc">референт</span>
+									<div class="contacts-staff-subject">Токарева Елена Александровна</div>
+									<div class="contacts-staff-desc">референт</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-03</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-03</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Факс</span>
-									<span class="contacts-staff-subject">+7 (4012) 91-66-90</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Факс</div>
+									<div class="contacts-staff-subject">+7 (4012) 91-66-90</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">E-mail</span>
-									<a class="contacts-staff-link" href="mailto:rector@bga.gazinter.net">rector@bga.gazinter.net</a>
+									<div class="contacts-staff-desc contacts-staff-desc-type">E-mail</div>
+									<a class="contacts-link" href="mailto:rector@bga.gazinter.net">rector@bga.gazinter.net</a>
 								</div>
 							</div>
 							<div class="contacts-staff-item">
 								<span class="contacts-staff-title">Приемная комиссия</span>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">г. Калининград, ул. Молодежная, 6, учебный корпус № 1, каб. 212а</span>
+									<div class="contacts-staff-subject">г. Калининград, ул. Молодежная, 6, учебный корпус № 1, каб. 212а</div>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Лазарева Стелла Сергеевна</span>
-									<span class="contacts-staff-desc">ответственная за прием</span>
+									<div class="contacts-staff-subject">Лазарева Стелла Сергеевна</div>
+									<div class="contacts-staff-desc">ответственная за прием</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефоны</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-51-62,</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-51-63</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефоны</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-51-62,</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-51-63</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">E-mail</span>
-									<a class="contacts-staff-link" href="mailto:abiturient@bga.gazinter.net">abiturient@bga.gazinter.net</a>
+									<div class="contacts-staff-desc contacts-staff-desc-type">E-mail</div>
+									<a class="contacts-link" href="mailto:abiturient@bga.gazinter.net">abiturient@bga.gazinter.net</a>
 								</div>
 							</div>
 							<div class="contacts-staff-item">
 								<span class="contacts-staff-title">Пресс-служба</span>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Образцова Ирина Викторовна</span>
-									<span class="contacts-staff-desc">руководитель пресс-службы</span>
+									<div class="contacts-staff-subject">Образцова Ирина Викторовна</div>
+									<div class="contacts-staff-desc">руководитель пресс-службы</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-51-84</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-51-84</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">E-mail</span>
-									<a class="contacts-staff-link" href="mailto:press@bgarf.ru">press@bgarf.ru</a>
+									<div class="contacts-staff-desc contacts-staff-desc-type">E-mail</div>
+									<a class="contacts-link" href="mailto:press@bgarf.ru">press@bgarf.ru</a>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Алеев Алексей Дмитриевич</span>
-									<span class="contacts-staff-desc">специалист пресс-службы</span>
+									<div class="contacts-staff-subject">Алеев Алексей Дмитриевич</div>
+									<div class="contacts-staff-desc">специалист пресс-службы</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">E-mail</span>
-									<a class="contacts-staff-link" href="mailto:aleev@bgarf.ru">aleev@bgarf.ru</a>
+									<div class="contacts-staff-desc contacts-staff-desc-type">E-mail</div>
+									<a class="contacts-link" href="mailto:aleev@bgarf.ru">aleev@bgarf.ru</a>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Санникова Ирина Ивановна</span>
-									<span class="contacts-staff-desc">специалист пресс-службы</span>
+									<div class="contacts-staff-subject">Санникова Ирина Ивановна</div>
+									<div class="contacts-staff-desc">специалист пресс-службы</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">E-mail</span>
-									<a class="contacts-staff-link" href="mailto:sannikovabgarf@gmail.com">sannikovabgarf@gmail.com</a>
+									<div class="contacts-staff-desc contacts-staff-desc-type">E-mail</div>
+									<a class="contacts-link" href="mailto:sannikovabgarf@gmail.com">sannikovabgarf@gmail.com</a>
 								</div>
 							</div>
 							<div class="contacts-staff-item">
 								<span class="contacts-staff-title">Отдел делопроизводства</span>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Халявка Татьяна Николаевна</span>
-									<span class="contacts-staff-desc">заведующая отделом</span>
+									<div class="contacts-staff-subject">Халявка Татьяна Николаевна</div>
+									<div class="contacts-staff-desc">заведующая отделом</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-38</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-38</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">E-mail</span>
-									<a class="contacts-staff-link" href="mailto:kanzbga@bga.gazinter.net">kanzbga@bga.gazinter.net</a>
+									<div class="contacts-staff-desc contacts-staff-desc-type">E-mail</div>
+									<a class="contacts-link" href="mailto:kanzbga@bga.gazinter.net">kanzbga@bga.gazinter.net</a>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Айказян Марина Рафаиловна</span>
-									<span class="contacts-staff-desc">заведующая архивом</span>
+									<div class="contacts-staff-subject">Айказян Марина Рафаиловна</div>
+									<div class="contacts-staff-desc">заведующая архивом</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-39</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-39</div>
 								</div>
 							</div>
 							<div class="contacts-staff-item">
 								<span class="contacts-staff-title">Управление мореплавания и практики УПС «Крузенштерн» и УПС «Седов»</span>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Новиков Михаил Вячеславович</span>
-									<span class="contacts-staff-desc">начальник управления</span>
+									<div class="contacts-staff-subject">Новиков Михаил Вячеславович</div>
+									<div class="contacts-staff-desc">начальник управления</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-46</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-46</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">E-mail</span>
-									<a class="contacts-staff-link" href="mailto:mpp@bga.gazinter.net">mpp@bga.gazinter.net</a>
+									<div class="contacts-staff-desc contacts-staff-desc-type">E-mail</div>
+									<a class="contacts-link" href="mailto:mpp@bga.gazinter.net">mpp@bga.gazinter.net</a>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Угленко Юлия Андреевна</span>
-									<span class="contacts-staff-desc">ведущий специалист</span>
+									<div class="contacts-staff-subject">Угленко Юлия Андреевна</div>
+									<div class="contacts-staff-desc">ведущий специалист</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-51-69</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-51-69</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">E-mail</span>
-									<a class="contacts-staff-link" href="mailto:kruz_market@bga.gazinter.net">kruz_market@bga.gazinter.net</a>
+									<div class="contacts-staff-desc contacts-staff-desc-type">E-mail</div>
+									<a class="contacts-link" href="mailto:kruz_market@bga.gazinter.net">kruz_market@bga.gazinter.net</a>
 								</div>
 							</div>
 							<div class="contacts-staff-item">
 								<span class="contacts-staff-title">Бухгалтерия</span>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Бойко Ирина Анатольевна</span>
-									<span class="contacts-staff-desc">главный бухгалтер</span>
+									<div class="contacts-staff-subject">Бойко Ирина Анатольевна</div>
+									<div class="contacts-staff-desc">главный бухгалтер</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-13</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-13</div>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Шубина Ольга Петровна</span>
-									<span class="contacts-staff-desc">начальник планово-экономического отдела</span>
+									<div class="contacts-staff-subject">Шубина Ольга Петровна</div>
+									<div class="contacts-staff-desc">начальник планово-экономического отдела</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-14</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-14</div>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Расчетный отдел сотрудников</span>
+									<div class="contacts-staff-subject">Расчетный отдел сотрудников</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-65</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-65</div>
 								</div>
 							</div>
-							<div class="contacts-staff-item">
+							<div class="contacts-staff-item contacts-staff-item-no-title">
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Расчетный отдел курсантов и студентов</span>
+									<div class="contacts-staff-subject">Расчетный отдел курсантов и студентов</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-51-75 </span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-51-75 </div>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Материальный отдел</span>
+									<div class="contacts-staff-subject">Материальный отдел</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-40</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-40</div>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Контрактная служба</span>
+									<div class="contacts-staff-subject">Контрактная служба</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-43</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-43</div>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Касса</span>
+									<div class="contacts-staff-subject">Касса</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 95-54-29</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 95-54-29</div>
 								</div>
 							</div>
 							<div class="contacts-staff-item">
 								<span class="contacts-staff-title">Отдел кадров</span>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Лукьянова Татьяна Николаевна</span>
-									<span class="contacts-staff-desc">начальник отдела кадров</span>
+									<div class="contacts-staff-subject">Лукьянова Татьяна Николаевна</div>
+									<div class="contacts-staff-desc">начальник отдела кадров</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-35</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-35</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">E-mail</span>
-									<a class="contacts-staff-link" href="mailto:hr_manager@bga.gazinter.net">hr_manager@bga.gazinter.net</a>
+									<div class="contacts-staff-desc contacts-staff-desc-type">E-mail</div>
+									<a class="contacts-link" href="mailto:hr_manager@bga.gazinter.net">hr_manager@bga.gazinter.net</a>
 								</div>
 							</div>
 							<div class="contacts-staff-item">
 								<span class="contacts-staff-title">Юридический отдел</span>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Фалонова Татьяна Николаевна</span>
-									<span class="contacts-staff-desc">юрист</span>
+									<div class="contacts-staff-subject">Фалонова Татьяна Николаевна</div>
+									<div class="contacts-staff-desc">юрист</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-42</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-42</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">E-mail</span>
-									<a class="contacts-staff-link" href="mailto:awyer@bga.gazinter.net">awyer@bga.gazinter.net</a>
+									<div class="contacts-staff-desc contacts-staff-desc-type">E-mail</div>
+									<a class="contacts-link" href="mailto:awyer@bga.gazinter.net">awyer@bga.gazinter.net</a>
 								</div>
 							</div>
 							<div class="contacts-staff-item">
 								<span class="contacts-staff-title">Учебно-методическое управление</span>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Морозова Светлана Юрьевна</span>
-									<span class="contacts-staff-desc">начальник учебного отдела</span>
+									<div class="contacts-staff-subject">Морозова Светлана Юрьевна</div>
+									<div class="contacts-staff-desc">начальник учебного отдела</div>
 								</div>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-09</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-09</div>
 								</div>
 							</div>
 							<div class="contacts-staff-item">
 								<span class="contacts-staff-title">Телефон доверия</span>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">+7 (4012) 21-72-04</span>
+									<div class="contacts-staff-subject">+7 (4012) 21-72-04</div>
 								</div>
 								<div class="contacts-staff-block">
-									<span class="contacts-staff-subject">Ежедневно в рабочие дни с 9.00 до 13.00 и с 14.00 до 17.00 </span>
+									<div class="contacts-staff-schedule">Ежедневно в рабочие дни<br> с 9.00 до 13.00 и с 14.00 до 17.00 </div>
 								</div>
 							</div>
 							<div class="contacts-staff-item">
 								<span class="contacts-staff-title">Дежурные по академии</span>
 								<div class="contacts-staff-detail">
-									<span class="contacts-staff-desc contacts-staff-desc-type">Телефон</span>
-									<span class="contacts-staff-subject">+7 (4012) 92-50-20</span>
+									<div class="contacts-staff-desc contacts-staff-desc-type">Телефон</div>
+									<div class="contacts-staff-subject">+7 (4012) 92-50-20</div>
 								</div>
 							</div>
 						</div>
