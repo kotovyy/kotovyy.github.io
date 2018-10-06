@@ -83,3 +83,18 @@ $(document).ready(function(){
   });
 
 });
+
+// main slider
+
+$(document).ready(function(){
+  $(".owl-carousel-main").owlCarousel({
+ 
+      items : 1,
+      nav: true,
+      dots: true,
+      dotsEach: true,
+      navText: false,
+      pagination: false
+  });
+
+});

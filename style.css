@@ -100,8 +100,8 @@ ul {
 	align-items: center;
 	text-decoration: none;
 	color: #4a4a4a;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 16px;
+	line-height: 21px;
 	text-transform: uppercase;
 	box-sizing: border-box;
 }
@@ -1132,6 +1132,12 @@ ul {
 	margin-bottom: 40px;
 }
 
+.preview.owl-carousel .owl-dots {
+	left: auto;
+	right: 60px;
+	width: auto;
+}
+
 .owl-dot + .owl-dot {
 	margin-left: 10px;
 }
@@ -1235,7 +1241,6 @@ button::-moz-focus-inner {
 }
 
 .contacts-section-item-wide {
-	max-width: 1413px;
 	width: 100%;
 	background: #effbff;
 	margin-top: 26px;
@@ -1304,6 +1309,10 @@ button::-moz-focus-inner {
 	width: 147px;	
 }
 
+.contacts-detail-column:first-child {
+	margin-right: 50px;
+}
+
 .contacts-staff-title {
 	color: #007CC4;
 	font-size: 18px;
@@ -1345,7 +1354,7 @@ button::-moz-focus-inner {
 	color: #007cc4;
 	font-size: 12px;
 	line-height: 18px;
-	transition: a;; .15s linear;
+	transition: all .15s linear;
 }
 
 .contacts-link:hover {
@@ -1425,7 +1434,7 @@ button::-moz-focus-inner {
 }
 
 .contacts-form-captcha {
-	margin: 37px 0 26px;
+	margin: 37px 0 50px;
 	display: flex;
 }
 
@@ -2091,10 +2100,6 @@ button::-moz-focus-inner {
 		width: 267px;
 	}
 
-	.contacts-form-captcha {
-		margin-bottom: 46px;
-	}
-
 	.contacts-section-list {
 		margin-bottom: 20px;
 	}
@@ -2122,6 +2127,13 @@ button::-moz-focus-inner {
 		padding: 55px 20px 80px 37px;
 	}
 
+	.preview.owl-carousel .owl-dots {
+		left: 0;
+		right: 0;
+		width: 100%;
+		bottom: 186px;
+	}
+
 }
 
 @media (max-width: 700px) {
@@ -2132,6 +2144,10 @@ button::-moz-focus-inner {
 
 	.owl-carousel .owl-dots {
 		margin-bottom: 20px;
+	}
+
+	.preview.owl-carousel .owl-dots {
+		bottom: 246px;
 	}
 
 	.contacts-form-captcha {
@@ -2227,6 +2243,10 @@ button::-moz-focus-inner {
 	.preview-more-text:after {
 		content: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%227%22%20height%3D%2210%22%20viewBox%3D%220%200%207%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%3Cpath%20d%3D%22M1.20393%200L0%201.16667L3.95577%205L0%208.83333L1.20393%2010L6.36364%205L1.20393%200Z%22%20fill%3D%22white%22/%3E%0A%3C/svg%3E%0A);
 		top: -1px;
+	}
+
+	.preview.owl-carousel .owl-dots {
+		bottom: 110px;
 	}
 
 	.features-link-text {
