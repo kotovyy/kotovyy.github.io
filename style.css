@@ -79,7 +79,7 @@ ul {
 }
 
 .features-list {
-	justify-content: space-between;
+	justify-content: center;
 	padding: 0 23px;
 }
 
@@ -358,6 +358,13 @@ ul {
 
 .features-item {
 	width: 245px;
+	padding: 0 4%;
+	margin-top: 24px;
+	margin-bottom: 19px;
+}
+
+.features-item + .features-item {
+	border-left: 1px solid rgba(255, 255, 255, .15);
 }
 
 .features-link {
@@ -365,7 +372,7 @@ ul {
 	color: #f9fcfe;
 	text-decoration: none;
 	width: 100%;
-	height: 150px;
+	height: 110px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -2081,15 +2088,26 @@ button::-moz-focus-inner {
 
 	.features-list {
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: center;
+		padding: 20px 23px 5px;
 	}
 
 	.features-item {
 		width: 270px;
+		border-bottom: 1px solid rgba(255, 255, 255, .15);
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 24px;
+		padding-bottom: 19px;
+	}
+
+	.features-item:last-child {
+		border-bottom: none;
+		border-right: 1px solid rgba(255, 255, 255, .15);
 	}
 
 	.features-link {
-		height: 140px;
+		height: 100px;
 		justify-content: flex-start;
 	}
 
@@ -2464,7 +2482,52 @@ button::-moz-focus-inner {
 
 }
 
+@media (max-width: 1113px) {
+
+	.features-item + .features-item-info {
+		border-bottom: none;
+		border-left: none;
+	}
+
+	.features-item:last-child {
+		border-right: none;
+	}
+
+	.features-item {
+		width: 39%;
+	}
+}
+
 @media (max-width: 700px) {
+
+	.features-list {
+		flex-direction: column;
+		padding: 20px 0 5px;
+	}
+
+	.features-item {
+		padding: 0 23px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.features-link {
+		padding-left: 60px;
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
+
+	.features-item + .features-item {
+	    border-left: none;
+	}
+
+	.features-item + .features-item-info {
+		border-bottom: 1px solid rgba(255, 255, 255, .15);
+	}
+
+	.features {
+		padding-bottom: 0;
+	}
 
 	.news-item-link {
 		width: 280px;
@@ -2622,12 +2685,8 @@ button::-moz-focus-inner {
 		line-height: 20px;
 	}
 
-	.features-item {
-		width: 220px;
-	}
-
 	.features-link {
-		height: 120px;
+		padding-left: 40px;
 	}
 
 	.features {
@@ -2635,6 +2694,10 @@ button::-moz-focus-inner {
 		padding: 9px 0 5px;
 	}
 
+	.features-list {
+		padding: 0;
+	}
+	
 	.news-title {
 		text-align: center;
 		margin-bottom: 13px;
