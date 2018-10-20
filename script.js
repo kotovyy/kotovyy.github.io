@@ -69,6 +69,16 @@ function changeSection(sectionValue, sectionName)
 	}
 }
 
+// mobile submenu
+const sidebarList = document.querySelector('.sidebar-menu-list');
+const sidebarSelectedItem = document.querySelector('.sidebar-menu-item-selected');
+
+sidebarSelectedItem.addEventListener('click', toggleSidebarMenu.bind(this));
+
+function toggleSidebarMenu(event) {
+	sidebarList.classList.toggle("sidebar-menu-list-show");	
+}
+
 // slider for news
 
 $(document).ready(function(){
