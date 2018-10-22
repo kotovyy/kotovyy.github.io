@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="header_inner">
+			<div class="header-inner container">
 				<div class="header-logo">
 					<div class="header-logo-title">
 						<a href="#" class="header-logo-title-inner">
@@ -154,9 +154,24 @@
 				</div>
 			</div>
 		</header>
-		<main class="content">
+		<main class="content container">
+			<div class="sidebar sidebar-mobile">
+				<div class="sidebar-menu">
+					<ul class="sidebar-menu-list sidebar-menu-list-show">
+						<li class="sidebar-menu-item sidebar-menu-item-active">
+							<a href="#address" class="sidebar-menu-link">Адрес и телефон</a>
+						</li>
+						<li class="sidebar-menu-item">
+							<a href="#contacts" class="sidebar-menu-link">Контакты сотрудников</a>
+						</li>
+						<li class="sidebar-menu-item">
+							<a href="#message" class="sidebar-menu-link">Отправить сообщение</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<div class="contacts-section-list">
-				<div class="contacts-section-item contacts-section-item-contacts">
+				<div class="contacts-section-item contacts-section-item-contacts" id="address">
 					<div class="contacts-section-header">
 						<div class="contacts-section-title">Контакты</div>
 						<div class="contacts-section-desc">Балтийской государственной академии рыбопромыслового флота</div>
@@ -207,7 +222,7 @@
 						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A368da40ee09a7a79ce541654f73f697bf242aa8df512392c56e5784dbe82797e&amp;source=constructor" class="contacts-detail-map-iframe" frameborder="0"></iframe>
 					</div>
 				</div>
-				<div class="contacts-section-item contacts-section-item-form">
+				<div class="contacts-section-item contacts-section-item-form" id="message">
 					<div class="contacts-section-header">
 						<div class="contacts-section-title">Отправить сообщение</div>
 						<div class="contacts-section-desc">По всем интересующим вас вопросам вы можете обратиться к сотрудникам БГАРФ и получить ответ</div>
@@ -233,7 +248,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="contacts-section-item contacts-section-item-wide">
+				<div class="contacts-section-item contacts-section-item-wide" id="contacts">
 					<div class="contacts-section-header">
 						<div class="contacts-section-title">Сотрудники</div>
 						<div class="contacts-section-desc">Балтийской государственной академии рыбопромыслового флота</div>
