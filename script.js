@@ -88,7 +88,7 @@ window.addEventListener('resize', toggleNumbersSlider.bind(this));
 function toggleNumbersSlider() {
 	const numbersList = document.querySelector('.numbers-list');
 
-	if(document.documentElement.clientWidth <= 1113) {
+	if(document.documentElement.clientWidth <= 700) {
 		numbersList.classList.add("owl-carousel");
 
 		$(document).ready(function(){
@@ -101,7 +101,7 @@ function toggleNumbersSlider() {
 			});
 
 		});
-	} else if(document.documentElement.clientWidth > 1113) {
+	} else if(document.documentElement.clientWidth > 700) {
 		$(".numbers-list").owlCarousel('destroy');
 		numbersList.classList.remove("owl-carousel");
 	};
