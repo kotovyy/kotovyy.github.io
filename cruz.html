@@ -5,11 +5,13 @@
 		<meta name="viewport"
 			  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="style.css">
-		<title>Поступление</title>
+		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+		<title>Крузенштерн</title>
 	</head>
 	<body>
 		<header class="header">
-			<div class="header_inner">
+			<div class="header-inner container">
 				<div class="header-logo">
 					<div class="header-logo-title">
 						<a href="#" class="header-logo-title-inner">
@@ -138,10 +140,10 @@
 									<a href="admission.html" class="menu-bottom-link">Поступление</a>
 								</li>
 								<li class="menu-bottom-item">
-									<a href="cruz.html" class="menu-bottom-link">Крузенштерн</a>
+									<a href="cruz.html" class="menu-bottom-link">«Крузенштерн»</a>
 								</li>
 								<li class="menu-bottom-item">
-									<a href="sedov.html" class="menu-bottom-link">Седов</a>
+									<a href="sedov.html" class="menu-bottom-link">«Седов»</a>
 								</li>
 								<li class="menu-bottom-item">
 									<a href="contacts.html" class="menu-bottom-link">Контакты</a>
@@ -152,200 +154,177 @@
 				</div>
 			</div>
 		</header>
-		<main class="content">
+		<main class="content container">
 			<div class="content-inner">
 				<div class="sidebar">
 					<div class="sidebar-menu">
+						<div class="sidebar-menu-item-selected">Новости</div>
 						<ul class="sidebar-menu-list">
-							<li class="sidebar-menu-item">
-								<a href="#" class="sidebar-menu-link">Приемная комиссия</a>
+							<li class="sidebar-menu-item sidebar-menu-item-active">
+								<a href="news.html" class="sidebar-menu-link">Новости</a>
 							</li>
 							<li class="sidebar-menu-item">
-								<a href="#" class="sidebar-menu-link">Протоколы зачисления</a>
+								<a href="#" class="sidebar-menu-link">История</a>
 							</li>
 							<li class="sidebar-menu-item">
-								<a href="#" class="sidebar-menu-link">Приказы об отчислении</a>
+								<a href="#" class="sidebar-menu-link">Экипаж</a>
 							</li>
 							<li class="sidebar-menu-item">
-								<a href="#" class="sidebar-menu-link">Перечень лиц подавших заявления</a>
+								<a href=# class="sidebar-menu-link">Местоположение судна</a>
 							</li>
 							<li class="sidebar-menu-item">
-								<a href=# class="sidebar-menu-link">Ход приема документов</a>
+								<a href="#" class="sidebar-menu-link">График рейсов на 2017</a>
+							</li>
+							<li class="sidebar-menu-item">
+								<a href="#" class="sidebar-menu-link">Как попасть?</a>
+							</li>
+							<li class="sidebar-menu-item">
+								<a href="#" class="sidebar-menu-link">Виртуальный тур</a>
+							</li>
+							<li class="sidebar-menu-item">
+								<a href=# class="sidebar-menu-link">Письма курсантов</a>
 							</li>
 						</ul>
 					</div>
-					<div class="sidebar-block sidebar-block-light">
+					<div class="sidebar-block sidebar-block-cruz">
 						<div class="sidebar-block-inner">
-							<div class="sidebar-block-title">Приемная комиссия</div>
-							<div class="sidebar-block-subtitle">с 20 июня по 31 августа</div>
-							<span class="contacts-detail-text sidebar-block-item">г. Калининград, ул. Молодежная, 6, учебный корпус № 1, каб. 260</span>
-							<div class="sidebar-block-item">
-								<span class="contacts-detail-text">+7 (4012) 92-51-62</span>
-								<span class="contacts-detail-text">+7 (4012) 92-51-63</span>
+							<div class="sidebar-menu-item">
+								<a href="https://vk.com/sts_kruzenshtern" class="sidebar-menu-link sidebar-menu-link-vk" target="_blank">Барк «Крузенштерн»  во Вконтакте</a>
 							</div>
-							<a class="contacts-link" href="mailto:abiturient@bga.gazinter.net">abiturient@bga.gazinter.net</a>
-							<div class="sidebar-block-item">
-								<div class="sidebar-block-item-title">Режим работы:</div>
-								<span class="contacts-detail-text">Понедельник - Пятница:</span>
-								<span class="contacts-detail-text">с 8:30 до 17:00</span>
-								<div class="sidebar-block-item-notice">Перерыв: с 13.00 до 13.30<br> Суббота — Воскресенье: выходной</div>
+							<div class="sidebar-menu-item">
+								<a href="https://www.facebook.com/kruzenshternofficial/" class="sidebar-menu-link sidebar-menu-link-fb" target="_blank">Барк «Крузенштерн» в Facebook</a>
 							</div>
 						</div>
 					</div>
-					<div class="sidebar-block">
-						<div class="sidebar-block-inner">
-							<div class="sidebar-block-title sidebar-block-title-dark">Задать вопрос специалисту приемной комиссии</div>
-							<button type="submit" class="news-button">Отправить</button>
+					<div class="sidebar-block-banner">
+						<div class="sidebar-block-banner-inner">
+							<span class="sidebar-block-banner-site">KRUZENSHTERN.COM</span>
+							<span class="sidebar-block-banner-text">официальный сайт барка</span>
+							<span class="sidebar-block-site-banner-logo"></span>
 						</div>
-					</div>
-					<div class="sidebar-block">
-						<div class="sidebar-block-inner">
-							<div class="sidebar-block-title">Отдел профориентационной работы и приёма в академию</div>
-							<div class="sidebar-block-subtitle">с 1 сентября по 19 июня</div>
-							<span class="contacts-detail-text sidebar-block-item">г. Калининград, ул. Молодежная, 6, учебный корпус № 1, каб. 212а</span>
-							<div class="sidebar-block-item">
-								<span class="contacts-detail-text">+7 (4012) 92-51-62</span>
-								<a class="contacts-link" href="mailto:abiturient@bga.gazinter.net">abiturient@bga.gazinter.net</a>
-							</div>
-							<div class="sidebar-block-item">
-								<div class="sidebar-block-item-title">Режим работы:</div>
-								<span class="contacts-detail-text">Понедельник - Пятница:</span>
-								<span class="contacts-detail-text">с 8:30 до 17:00</span>
-								<div class="sidebar-block-item-notice">Перерыв: с 13.00 до 13.30<br> Суббота — Воскресенье: выходной</div>
-							</div>
-						</div>
-					</div>
-					<div class="sidebar-block">
-						<div class="sidebar-block-inner">
-							<div class="sidebar-block-title">Консультации психологов по выбору будущей профессии</div>
-							<span class="contacts-detail-text sidebar-block-item">г. Калининград, ул. Молодежная, 6, учебный корпус №3, каб. 204</span>
-							<div class="sidebar-block-item">
-								<span class="contacts-detail-text">+7 (4012) 92-51-58</span>
-								<span class="contacts-detail-text">+7 921105-32-62</span>
-							</div>
-						</div>
-					</div>
-					<div class="sidebar-block">
-						<div class="sidebar-block-inner">
-							<div class="sidebar-block-title">Центр довузовской подготовки</div>
-							<span class="contacts-detail-text sidebar-block-item">г. Калининград, ул. Молодежная, 6, учебный корпус № 1, каб. 203</span>
-							<div class="sidebar-block-item">
-								<span class="contacts-detail-text">+7 (4012) 92-50-55</span>
-								<a class="contacts-link" href="mailto:fdp@bga.gazinter.net">fdp@bga.gazinter.net</a>
-							</div>
-						</div>
+						<a class="sidebar-block-banner-btn" href="http://kruzenshtern.com/">Перейти</a>
 					</div>
 				</div>
-				<div class="workarea">
+				<div class="workarea workarea-light">
 					<div class="workarea-inner">
-						<div class="adm-intro">
-							<div class="adm-intro-inner">
-								В соответствии с лицензией на право ведения образовательной деятельности БГАРФ ФГБОУ ВО «КГТУ» прием абитуриентов осуществляется на следующие основные образовательные программы высшего образования:
-							</div>
-						</div>
-						<div class="adm-list">
-							<div class="adm-item">
-								<div class="adm-img-block">
-									<div class="adm-img" style="background-image: url(img/adm-img.jpg);"></div>
-								</div>
-								<div class="adm-item-content">
-									<div class="adm-title">Бакалавров</div>
-									<div class="adm-option">
-										<div class="adm-option-text">Холодильная, криогенная техника и системы жизнеобеспечения</div>
-										<div class="adm-option-notice">очная, заочная</div>
+						<div class="numbers numbers-workarea">
+							<div class="container">
+								<div class="numbers-title">Барк «Крузенштерн» сегодня</div>
+								<div class="numbers-list owl-carousel">
+									<div class="numbers-item">
+										<div class="numbers-value">90</div>
+										<div class="numbers-text">лет истории</div>
 									</div>
-									<div class="adm-option">
-										<div class="adm-option-text">Управление водным транспортом и гидрографическое обеспечение судоходства</div>
-										<div class="adm-option-notice">очная, заочная</div>
+									<div class="numbers-item">
+										<div class="numbers-value">2</div>
+										<div class="numbers-text">кругосветных путешествия</div>
 									</div>
-									<div class="adm-option">
-										<div class="adm-option-text">Эксплуатация транспортно-технологических машин и комплексов</div>
-										<div class="adm-option-notice">очная, заочная</div>
-									</div>
-									<div class="adm-option">
-										<div class="adm-option-text">Техносферная безопасность</div>
-										<div class="adm-option-notice">очная, заочная</div>
-									</div>
-									<div class="adm-option">
-										<div class="adm-option-text">Технология транспортных процессов</div>
-										<div class="adm-option-notice">очная, заочная</div>
-									</div>
-								</div>
-							</div>
-							<div class="adm-item">
-								<div class="adm-img-block">
-									<div class="adm-img" style="background-image: url(img/adm-img2.jpg);"></div>
-								</div>
-								<div class="adm-item-content">
-									<div class="adm-title">Специалистов</div>
-									<div class="adm-option">
-										<div class="adm-option-text">Судовождение</div>
-										<div class="adm-option-notice">очная, заочная</div>
-									</div>
-									<div class="adm-option">
-										<div class="adm-option-text">Эксплуатация судовых энергетических установок</div>
-										<div class="adm-option-notice">очная, заочная</div>
-									</div>
-									<div class="adm-option">
-										<div class="adm-option-text">Эксплуатация судового электрооборудования и средств автоматики</div>
-										<div class="adm-option-notice">очная, заочная</div>
-									</div>
-									<div class="adm-option">
-										<div class="adm-option-text">Информационная безопасность автоматизированных систем</div>
-										<div class="adm-option-notice">очная</div>
-									</div>
-									<div class="adm-option">
-										<div class="adm-option-text">Техническая эксплуатация транспортного радиооборудования</div>
-										<div class="adm-option-notice">очная, заочная</div>
+									<div class="numbers-item">
+										<div class="numbers-value">1 300 000</div>
+										<div class="numbers-text">миль пройдено</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="adm-docs">
-							<div class="adm-docs-inner">
-								<a href="#" class="adm-docs-link">Стоимость обучения</a>
-								<a href="#" class="adm-docs-link">Заявление о поступлении</a>
-								<a href="#" class="adm-docs-link">Вступительные испытания</a>
-								<a href="#" class="adm-docs-link">Стоимость образовательных услуг для иностранных лиц</a>
-								<a href="#" class="adm-docs-link">Сроки приема документов</a>
-								<a href="#" class="adm-docs-link">Проходные баллы на бюджет</a>
-								<a href="#" class="adm-docs-link">Контрольные цифры приема граждан по специальностям и направлениям подготовки на 2018/19 учебные годы</a>
-								<a href="#" class="adm-docs-link">Правила приема 2018</a>
-								<a href="#" class="adm-docs-link">Анкета для абитуриента</a>
-								<a href="#" class="adm-docs-link">Перевод и восстановление</a>
-								<a href="#" class="adm-docs-link">Олимпиады</a>
-								<a href="#" class="adm-docs-link">Нормативные документы</a>
+						<div class="academy-workarea">
+							<div class="academy-workarea-subject">Балтийская государственная академия рыбопромыслового флота (БГАРФ) — уникальный вуз с многоступенчатой системой подготовки специалистов начального, среднего и высшего морского образования.</div>
+							<div class="academy-workarea-img academy-workarea-img-left">
+								<img src="img/academy1.png" alt="">
 							</div>
-						</div>
-						<div class="adm-notice">
-							<div class="adm-notice-inner">В случае невозможности прибытия абитуриента в приемную комиссию документы могут быть поданы по почте или через законного представителя, действующего на основании доверенности, удостоверенной нотариально.</div>
-						</div>
-						<div class="adm-content">
-							<h2 class="adm-content-title">Документы, необходимые для поступления</h2>
-							<ul>
-								<li>- заявление на имя ректора университета по установленной форме - бланк заявления скачивается с официального сайта академии или выдается в приемной комиссии; </li>
-								<li>- согласие на обработку персональных данных по установленной форме - бланк скачивается с официального сайта академии или выдается в приемной комиссии;</li>
-								<li>- копии документа об образовании и приложения к нему; </li>
-								<li>- медицинскую справку о прохождении обязательного медицинского обследования
-									<span class="adm-content-desc">для поступления на направления (специальности), входящие в перечень специальностей и направлений подготовки, при приеме на обучение по которым поступающие проходят обязательные предварительные медицинские осмотры (обследования) в порядке,
-										установленном при заключении трудового договора или служебного контракта по соответствующей должности или специальности, утвержденный постановлением Правительства Российской Федерации от 14 августа 2013 г. № 697 (Приложение № 6 к Правилам приема КГТУ; «26.05.05 Судовождение»,
-										«26.05.06 Эксплуатация судовых энергетических установок», «26.05.07 Эксплуатация судового электрооборудования и средств автоматики», «16.03.03 Холодильная, криогенная техника и системы жизнеобеспечения», «25.05.03 Техническая эксплуатация транспортного радиооборудования»,
-										«23.03.03 Эксплуатация транспортно-технологических машин и комплексов», «23.03.01 Технология транспортных процессов»);</span>
-								</li>
-								<li>- документы, подтверждающие право абитуриента на льготы при приеме на обучение;</li>
-								<li>- копия документа, удостоверяющего личность;</li>
-								<li>- документы, дополнительно предоставляемые при необходимости в приемную комиссию;</li>
-								<li>- 4 фотографии размером 3х4 см.</li>
-							</ul>
-							<h2 class="adm-content-title">Документы, необходимые при подаче согласия на обучение</h2>
-							<ul>
-								<li>- заявление о согласии на зачисление;</li>
-								<li>- оригинал документа об образовании и приложения к нему;</li>
-							</ul>
+							<div class="academy-workarea-text-md">
+								<p>В профессорско-преподавательском составе академии — более 20 докторов и около 140 кандидатов наук.</p>
+								В структуру академии сегодня входят: 4 факультета (судоводительский, судомеханический, радиотехнический, транспортный), на которых более двух десятков кафедр,
+								Институт профессиональной педагогики и Балтийский Центр морского профессионального образования (площадка для повышения квалификации действующего плавсостава).
+								Диплом вуза имеют более 22 тысяч выпускников. На факультете военного обучения за 43 года подготовлены более 9 тысяч офицеров запаса. Сегодня в академии обучаются более 3000 человек.</div>
+							<div class="academy-workarea-img academy-workarea-img-center">
+								<img src="img/academy2.png" alt="">
+							</div>
+							<h2 class="academy-workarea-title">50 лет истории</h2>
+							<div class="academy-workarea-history">
+								<div class="academy-workarea-text-sm">
+									<p>1966 — Постановлением Совета Министров СССР № 330 от 30 апреля организовано Калининградское высшее мореходное училище — КВМУ. 13 июня приказом министра рыбного хозяйства ректором КВМУ назначен — Юрий Поликарпович Клетнов. Обучение велось на единственном факультете — «Морском».</p>
+									<p>1967 — На базе морского созданы судоводительский и судомеханический факультеты.</p>
+									<p>1969 — КВМУ переименовано в Калининградское высшее инженерное морское училище — КВИМУ.</p>
+									<p>1970 — Первый выпуск радиоинженеров.</p>
+									<p>1971 — Первые выпуски по всем специальностям. Первый набор иностранных студентов.</p>
+									<p>1973 — Создан радиотехнический факультет. Открыта подготовка специалистов без отрыва от производства.</p>
+									<p>1977 — Первый выпуск курсантов заочной формы обучения.</p>
+									<p>1978 — Введено в строй новое общежитие, большинство курсантов переведено на казарменное положение.</p>
+									<p>1980 — Впервые в училище создана интернациональная рота, куда вошли советские и иностранные курсанты.</p>
+									<p>1984 — На судоводительский и радиотехнический факультеты впервые в истории училища приняты девушки.</p>
+									<p>1985 — Ректором вуза назначен Александр Петрович Пимошенко.</p>
+									<p>1991 — КВИМУ преобразовано в Балтийскую государственную академию рыбопромыслового флота — БГАРФ. На баланс академии передано учебно-парусное судно «Крузенштерн». Как подготовительная ступень системы непрерывного морского образования в академии, начал работу Калининградский Морской лицей.</p>
+									<p>1991 — 1993 — На базе академии создан Балтийский региональный центр (БРАЦ) для аттестации и переподготовки командных кадров флота рыбной промышленности.</p>
+									<p>1994 — В структуру БГАРФ введен Всероссийский институт повышения квалификации работников рыбной промышленности. Открыта аспирантура по 9 специальностям.</p>
+									<p>1995/1996 — Первое кругосветное плавание УПС «Крузенштерн», посвященное 300-летию Российского флота, продолжительностью 308 суток.</p>
+									<p>1997 — Открыта специальность «Организация перевозок и управление на транспорте».</p>
+									<p>1998 — Открыта специальность «Коммерция». Военно-морская кафедра преобразована в факультет военного обучения.</p>
+									<p>1999 — Открыта специальность «Автоматизированные системы обработки информации и управления».</p>
+									<p>2002 — Открыты специальности: «Автомобили и автомобильное хозяйство», «Автосервис и фирменное обслуживание», «Защита в чрезвычайных ситуациях».</p>
+									<p>2005 — 2006 Второе кругосветное плавание барка «Крузенштерн», посвященное 60-летию Победы в Великой Отечественной войне и 200-летию первого кругосветного плавания российских моряков под руководством И.Ф. Крузенштерна длительностью 425 суток.</p>
+									<p>2006 — Открыт диссертационный совет по защите докторских и кандидатских диссертаций по техническим наукам. Организован транспортный факультет. Открыты три новые специальности: «Техническая эксплуатация судов и судового оборудования», «Эксплуатация перегрузочного оборудования портов и транспортных терминалов», «Комплексное обеспечение информационной безопасности автоматизированных систем». Создан Институт профессиональной педагогики.</p>
+								</div>
+								<div class="academy-workarea-text-sm">
+									<p>2007 — Экономический факультет преобразован в Институт прикладной экономики и менеджмента.</p>
+									<p>2008 — Конференцией коллектива академии ректором избран Владимир Алексеевич Волкогон. Начал работу Союз выпускников БГАРФ-КВИМУ.</p>
+									<p>2009–2010 — Международная трансатлантическая экспедиция барка «Крузенштерн», посвященная 65-летию Победы советского народа в Великой Отечественной войне, 90-летию образования рыбной промышленности России и 60-летию первой российской сельдяной экспедиции. Длительность экспедиции — 297 суток.</p>
+									<p>2010 — По Распоряжению Правительства РФ от 2 августа 2010 года № 1303-р и согласно приказа Федерального агентства по рыболовству от 9 сентября 2010 года № 769 Калининградский морской рыбопромышленный колледж вошел в состав Балтийской государственной академии рыбопромыслового флота в качестве структурного подразделения.</p>
+									<p>2011 — БГАРФ впервые признана Минтрансом РФ в качестве учебного заведения, обладающего правом ведения подготовки членов экипажей морских судов. Академия успешно прошла сертификацию на международный стандарт систем менеджмента ISO 9001:2008.</p>
+									<p>2012 — Присоединение БГАРФ в качестве обособленного структурного подразделения в КГТУ. Начальником академии назначен Сергей Михайлович Карпович.</p>
+									<p>2013- на базе Института повышения квалификации создан Балтийский центр морского профессионального образования.</p>
+									<p>2014 — участие барка «Крузенштерн» в XXII зимних Олимпийских Играх в Сочи.</p>
+									<p>2015 — в год 70-летия Победы в цикле мероприятий вуза — Международная историко-мемориальная экспедиция барка «Крузенштерн».</p>
+									<p>2016 — год 50-летнего юбилея академии, 90-летие барка «Крузенштерн».</p>
+									<p>2017- из Мурманского государственного технического университета передан в эксплуатацию самый большой в мире учебный барк «Седов».</p>
+									<div class="academy-workarea-img academy-workarea-img-last">
+										<img src="img/academy3.png" alt="">
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="news news-last">
+					<div class="container">
+						<div class="news-title">Последние новости</div>
+						<div class="news-list">
+							<div class="news-item">
+								<a href="#" class="news-item-link">
+									<img src="img/news1.jpg" alt="Крузенштерн">
+									<span class="news-item-link-overlay"></span>
+								</a>
+								<div class="news-item-desc">
+									<a href="#" class="news-item-section">Крузенштерн</a>
+									<a href="#" class="news-item-title">Приглашаем на открытый борт «Крузенштерна»!</a>
+									<span class="news-item-date">20 февраля 2018</span>
+								</div>
+							</div>
+							<div class="news-item">
+								<a href="#" class="news-item-link">
+									<img src="img/news2.jpg" alt="Седов">
+									<span class="news-item-link-overlay"></span>
+								</a>
+								<div class="news-item-desc">
+									<a href="#" class="news-item-section">Седов</a>
+									<a href="#" class="news-item-title">На барке «Седов» наградили курсантов по итогам учебного рейса</a>
+									<span class="news-item-date">20 февраля 2018</span>
+								</div>
+							</div>
+							<div class="news-item">
+								<a href="#" class="news-item-link">
+									<img src="img/news3.jpg" alt="Академия">
+									<span class="news-item-link-overlay"></span>
+								</a>
+								<div class="news-item-desc">
+									<a href="#" class="news-item-section">Академия</a>
+									<a href="#" class="news-item-title">Что необходимо для получения повышенной стипендии</a>
+									<span class="news-item-date">20 февраля 2018</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 		</main>
 		<footer class="footer">
 			<div class="socials">
@@ -540,9 +519,6 @@
 		<script src="owlcarousel/owl.carousel.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
 		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
-		<script type="text/javascript">
-			VK.Widgets.Group("widget-group", {mode: 3}, 42153509);
-		</script>
 		<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
 		<script src="https://yastatic.net/share2/share.js"></script>
 	</body>
