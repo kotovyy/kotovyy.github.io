@@ -88,23 +88,37 @@ window.addEventListener('resize', toggleNumbersSlider.bind(this));
 function toggleNumbersSlider() {
 	const numbersList = document.querySelector('.numbers-list');
 
-	if(document.documentElement.clientWidth <= 700) {
-		numbersList.classList.add("owl-carousel");
+	if(numbersList) {
+		if(document.documentElement.clientWidth <= 700) {
+			numbersList.classList.add("owl-carousel");
 
-		$(document).ready(function(){
-			$(".owl-carousel").owlCarousel({
-				items : 1,
-				nav: true,
-				dots: false,
-				navText: false,
-				pagination: false
+			$(document).ready(function(){
+				$(".owl-carousel").owlCarousel({
+					items : 1,
+					nav: true,
+					dots: false,
+					navText: false,
+					pagination: false
+				});
+
 			});
+		} else if(document.documentElement.clientWidth > 700) {
+			$(".numbers-list").owlCarousel('destroy');
+			numbersList.classList.remove("owl-carousel");
+		};
+	}
 
-		});
-	} else if(document.documentElement.clientWidth > 700) {
-		$(".numbers-list").owlCarousel('destroy');
-		numbersList.classList.remove("owl-carousel");
-	};
+
+	/* Delete class-modificator for News block*/
+	const newsCruzBlock = document.getElementById('news-cruz-block');
+	if(newsCruzBlock) {
+		if(document.documentElement.clientWidth <= 950) {
+			newsCruzBlock.classList.remove('news-section')
+		} else if(document.documentElement.clientWidth > 950) {
+			newsCruzBlock.classList.add('news-section')
+		};
+	}
+
 }
 
 toggleNumbersSlider();
