@@ -138,3 +138,27 @@ $(document).ready(function(){
   });
 
 });
+
+/* menu inside content pages */
+var menuListTitles = document.querySelectorAll('.workarea-menu-title');
+
+if(menuListTitles) {
+
+	menuListTitles = Array.prototype.slice.call(menuListTitles, 0);
+
+	menuListTitles.forEach(function(title) {
+		title.addEventListener('click', showMenuContent.bind(this));
+	});
+
+	function showMenuContent(event) {
+		var target = event.target;
+		
+		if(!target.classList.contains("workarea-menu-title")) {
+			target = target.parentNode;
+		}
+		target.classList.toggle("workarea-menu-title-active");
+		target.nextElementSibling.classList.toggle("workarea-menu-detail-show");
+	}
+}
+
+
