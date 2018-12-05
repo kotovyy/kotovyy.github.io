@@ -492,6 +492,7 @@ img {
 	position: relative;
 }
 
+/* NEW */
  .news-item-link-overlay {
 	content: '';
 	position: absolute;
@@ -500,8 +501,8 @@ img {
 	width: 100%;
 	top: 0;
 	bottom: 0;
-	background: linear-gradient(to bottom, #007cc4 1%,#ffffff 99%);
-	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+	/* background: linear-gradient(to bottom, #007cc4 1%,#ffffff 99%); */
+	box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25), -4px -4px 45px rgba(0, 0, 0, 0.25);
 	opacity: 0;
 	transition: all .2s linear;
 }
@@ -2307,13 +2308,13 @@ button::-moz-focus-inner {
 /* NEW до конца */
 .workarea-dep .adm-item-content {
 	border-right: 0;
-	padding: 47px 50px 20px 37px;
+	padding: 47px 50px 20px 50px;
 }
 
 .contacts-section-item-dep {
 	background-color: #effbff;
-	padding-left: 67px;
 	padding-right: 20px;
+	padding-left: 50px;
 	margin-bottom: 27px;
 }
 
@@ -2394,7 +2395,7 @@ button::-moz-focus-inner {
 
 .workarea-menu-title {
 	min-height: 72px;
-	padding: 0 45px;
+	padding: 0 50px;
 	display: flex;
 	align-items: center;
 	cursor: pointer;
@@ -2534,6 +2535,21 @@ button::-moz-focus-inner {
 
 .workarea-menu-detail-show {
 	display: block;
+}
+
+.error-block {
+	margin: 100px auto;
+}
+
+.error-title {
+	color: #007CC4;
+	font: 48px/54px "OpenSans-Bold", Arial, Helvetica, sans-serif;
+	margin-bottom: 17px;
+}
+
+.error-desc {
+	color: #AEAEAE;
+	font: 48px/54px "OpenSans-Regular", Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 1400px) {
@@ -4093,5 +4109,22 @@ button::-moz-focus-inner {
 
 	.workarea-menu-detail-left img + img {
 	   margin-top: 25px;
+	}
+
+	.error-block {
+		padding: 0 12px;
+	}
+
+	.error-title {
+		margin-bottom: 10px;
+	}
+
+	.error-title, .error-desc {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+	.workarea-menu-title:after {
+		right: 12px;
 	}
 }
