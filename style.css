@@ -2648,6 +2648,20 @@ button::-moz-focus-inner {
 	opacity: .65;
 }
 
+.news-section-search .news-item-section {
+	display: block;
+	margin-bottom: 0;
+}
+
+.news-section-search .news-item-date {
+	margin-right: 39px;
+}
+
+.news-item-detail {
+	display: flex;
+	align-items: center;
+}
+
 @media (max-width: 1400px) {
 
 	.menu-top-link {
