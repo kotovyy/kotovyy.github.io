@@ -193,7 +193,7 @@ img {
 	justify-content: center;
 }
 
-.menu-bottom-link:hover {
+.menu-bottom-link:hover, .menu-bottom-link-active {
 	border-color: #c1e8ff;
 	color: #bcddf0;
 }
@@ -2033,8 +2033,8 @@ button::-moz-focus-inner {
 }
 
 .academy-workarea-text-sm p {
-	font-size: 10px;
-	line-height: 14px;
+	font-size: 12px;
+	line-height: 16px;
 }
 
 .academy-workarea {
@@ -2262,6 +2262,11 @@ button::-moz-focus-inner {
 	display: block;
 	padding: 0 7px;
 	margin: 0 5px;
+	transition: color .2s linear;
+}
+
+.news-page-link:hover {
+	color: #007cc4;
 }
 
 .news-section .news-item:last-child {
