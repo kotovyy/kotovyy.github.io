@@ -2312,11 +2312,14 @@ button::-moz-focus-inner {
 	padding: 47px 50px 20px 50px;
 }
 
+.workarea-dep .adm-list {
+	margin-bottom: 0;
+}
+
 .contacts-section-item-dep {
 	background-color: #effbff;
 	padding-right: 20px;
 	padding-left: 50px;
-	margin-bottom: 27px;
 }
 
 .contacts-section-item-dep .contacts-section-header,
